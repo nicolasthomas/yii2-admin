@@ -42,7 +42,7 @@ unset($rules[RouteRule::RULE_NAME]);
                 'attribute' => 'description',
                 'label' => Yii::t('rbac-admin', 'Description'),
             ],
-            ['class' => 'yii\grid\ActionColumn',],
+            ['class' => 'yii\grid\ActionColumn', 'buttonOptions' => ['data' => ['toggle' => 'confirmation', 'placement' => 'left',]]],
         ],
     ])
     ?>
